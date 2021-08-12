@@ -11,15 +11,15 @@ def main():
 	def divide(num1, num2):
 		return num1 / num2
 
-	print("Select operation -\n"
+	print("Choose operator:\n"
 	      "1) Add\n"
 	      "2) Subtract\n"
 	      "3) Multiply\n"
 	      "4) Divide\n")
 
-	select = int(input("Choose operation (1 - 4): "))
-	number1 = int(input("Enter number 1: "))
-	number2 = int(input("Enter number 2: "))
+	select = int(input("Choose operator (1 - 4): "))
+	number1 = int(input("Number 1: "))
+	number2 = int(input("Number 2: "))
 
 	if select == 1:
 		print(f"{number1} + {number2} =", add(number1, number2))
@@ -34,6 +34,7 @@ def main():
 
 	repeat = input("Do you want to count again? (y/n): ").lower()
 	if repeat == "y":
+		print("---------------------------------------")
 		main()
 	else:
 		print("Bye")
